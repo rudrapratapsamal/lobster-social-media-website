@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../login-background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main-box{
+  width:80% ;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  column-gap: 8%;
+  row-gap: 20%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 5px;
+}
+.logo-box{
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lobster{
+  font-family: 'Syne Mono', monospace;
+  color: #000;
+}
+.lobster-info{
+  color: #000;
+}
+a{
+  text-decoration: none;
+}
+.lobster-logo{
+  color: #0066FF ;
+  font-family: 'Syne Mono', monospace;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing:1rem;
+}
+
+@media (max-width:920px) {
+  .main-box{
+      width: 90%;
+      flex-wrap: wrap;
+      height: auto;
+      padding: 2%;
+  }
+  .logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+  }
+}

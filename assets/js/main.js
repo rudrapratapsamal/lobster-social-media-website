@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $("#signup").click(function(){
+        $("#main-box").removeClass("animate__zoomInDown");
+        $("#main-box").addClass("animate__zoomOutLeft");
+        $(".signingup").addClass("animate__zoomInDown");
+        $(".signingup").removeClass("animate__zoomOutLeft");
+        $(".signingup").show();
+    });
+    $(".signingup").hide();
+    $("#back-btn").click(function(){
+        $(".signingup").removeClass("animate__zoomInDown");
+        $(".signingup").addClass("animate__zoomOutLeft");
+        $("#main-box").addClass("animate__zoomInDown");
+        $("#main-box").removeClass("animate__zoomOutLeft");
+        $("#main-box").show();
+    });
+});
